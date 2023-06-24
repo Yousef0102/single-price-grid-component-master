@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --Bright-Yellow: hsl(71, 73%, 54%);
+  --Light-Gray: hsl(204, 43%, 93%);
+  --Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  height: 100vh;
+  background-color: var(--Light-Gray);
+}
+ul {
+  list-style: none;
+}
+/* Start Design */
+main {
+  height: 100vh;
+}
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  top: 100px;
+}
+@media (max-width: 630px) {
+  main .container {
+    flex-direction: column;
+    top: 20px;
+    bottom: 20px;
+  }
+}
+main .container .f-div {
+  width: 100%;
+}
+main .container .f-div .community {
+  max-width: 600px;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 15px;
+}
+@media (max-width: 630px) {
+  main .container .f-div .community {
+    width: 300px;
+  }
+}
+main .container .f-div .community h2 {
+  color: var(--Cyan);
+  margin: 10px 20px 30px;
+}
+main .container .f-div .community h3 {
+  color: var(--Bright-Yellow);
+  margin: 20px;
+}
+main .container .f-div .community p {
+  line-height: 1.7;
+  color: var(--Grayish-Blue);
+  margin: 20px;
+}
+main .container .s-div {
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+}
+@media (max-width: 630px) {
+  main .container .s-div {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+}
+main .container .s-div .price {
+  background-color: var(--Cyan);
+  margin-top: -21px;
+  padding: 0;
+  border-radius: 0 0 0px 10px;
+  width: 50%;
+}
+main .container .s-div .price h3 {
+  color: white;
+  padding: 10px;
+  margin: 20px;
+}
+main .container .s-div .price .money {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+main .container .s-div .price .money p {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+main .container .s-div .price .money span {
+  color: var(--Light-Gray);
+  font-size: 16px;
+  margin-top: -3px;
+}
+main .container .s-div .price p {
+  padding: 10px;
+  margin: 0 10px 10px 10px;
+  color: white;
+}
+main .container .s-div .price button {
+  background-color: var(--Bright-Yellow);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  display: block;
+  margin: 22px auto;
+  width: 75%;
+  border-radius: 10px;
+}
+main .container .s-div .about {
+  width: 50%;
+  background-color: hsl(179deg 64.19% 48.15%);
+  color: white;
+  padding: 20px 35px;
+  margin-top: -21px;
+  line-height: 1.6;
+  border-radius: 0 0 10px 0;
+}
+@media (max-width: 630px) {
+  main .container .s-div .price,
+  main .container .s-div .about {
+    width: 300px;
+    display: block;
+  }
+}
+main .container .s-div .about h2 {
+  margin-bottom: 17px;
+}
+main .container .s-div .about ul {
+}
+main .container .s-div .about ul li {
+}
+/* End Design */
+/* Start Media */
+
+/* End Media */
